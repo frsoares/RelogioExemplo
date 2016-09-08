@@ -28,4 +28,22 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func showAlert() {
+        
+        let ação1 = WKAlertAction(title: "Sim", style: .Default) {
+            // código para ação de "Sim" aqui
+        }
+        
+        let ação2 = WKAlertAction(title: "Não", style: .Destructive){
+            // código para ação de "Não" aqui
+        }
+        
+        let ação3 = WKAlertAction(title: "Cancelar", style: .Cancel){
+            print("oi")
+        }
+        
+        // Estilo do alerta está como ActionSheet. Poderia ser também Alert ou SideBySideButtonsAlert
+        presentAlertControllerWithTitle("Hey", message: "Woo loo loo", preferredStyle: .ActionSheet, actions: [ação1, ação2, ação3])
+        
+    }
 }
