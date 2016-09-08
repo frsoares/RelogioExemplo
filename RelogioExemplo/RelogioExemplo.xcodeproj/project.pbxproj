@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB38599D1D81A33B009B8A2A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38599C1D81A33B009B8A2A /* AppDelegate.swift */; };
+		DB38599F1D81A33B009B8A2A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB38599E1D81A33B009B8A2A /* ViewController.swift */; };
+		DB3859A21D81A33B009B8A2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3859A01D81A33B009B8A2A /* Main.storyboard */; };
+		DB3859A41D81A33B009B8A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3859A31D81A33B009B8A2A /* Assets.xcassets */; };
+		DB3859A71D81A33B009B8A2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3859A51D81A33B009B8A2A /* LaunchScreen.storyboard */; };
+		DB3859AC1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DB3859AB1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app */; };
+		DB3859B21D81A33B009B8A2A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3859B01D81A33B009B8A2A /* Interface.storyboard */; };
+		DB3859B41D81A33B009B8A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3859B31D81A33B009B8A2A /* Assets.xcassets */; };
+		DB3859BB1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB3859BA1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB3859C21D81A33B009B8A2A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3859C11D81A33B009B8A2A /* InterfaceController.swift */; };
+		DB3859C41D81A33B009B8A2A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3859C31D81A33B009B8A2A /* ExtensionDelegate.swift */; };
+		DB3859C61D81A33B009B8A2A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3859C51D81A33B009B8A2A /* NotificationController.swift */; };
+		DB3859C81D81A33B009B8A2A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3859C71D81A33B009B8A2A /* ComplicationController.swift */; };
+		DB3859CA1D81A33B009B8A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3859C91D81A33B009B8A2A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB3859AD1D81A33B009B8A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB3859911D81A33B009B8A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB3859AA1D81A33B009B8A2A;
+			remoteInfo = "RelogioExemplo WatchKit App";
+		};
+		DB3859BC1D81A33B009B8A2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB3859911D81A33B009B8A2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB3859B91D81A33B009B8A2A;
+			remoteInfo = "RelogioExemplo WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB3859D11D81A33B009B8A2A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB3859BB1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3859D51D81A33B009B8A2A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DB3859AC1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB3859991D81A33B009B8A2A /* RelogioExemplo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelogioExemplo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB38599C1D81A33B009B8A2A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB38599E1D81A33B009B8A2A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB3859A11D81A33B009B8A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB3859A31D81A33B009B8A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB3859A61D81A33B009B8A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB3859A81D81A33B009B8A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3859AB1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RelogioExemplo WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3859B11D81A33B009B8A2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DB3859B31D81A33B009B8A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB3859B51D81A33B009B8A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB3859BA1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RelogioExemplo WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB3859C01D81A33B009B8A2A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DB3859C11D81A33B009B8A2A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		DB3859C31D81A33B009B8A2A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		DB3859C51D81A33B009B8A2A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DB3859C71D81A33B009B8A2A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		DB3859C91D81A33B009B8A2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB3859CB1D81A33B009B8A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB3859961D81A33B009B8A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3859B71D81A33B009B8A2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB3859901D81A33B009B8A2A = {
+			isa = PBXGroup;
+			children = (
+				DB38599B1D81A33B009B8A2A /* RelogioExemplo */,
+				DB3859AF1D81A33B009B8A2A /* RelogioExemplo WatchKit App */,
+				DB3859BE1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension */,
+				DB38599A1D81A33B009B8A2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB38599A1D81A33B009B8A2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB3859991D81A33B009B8A2A /* RelogioExemplo.app */,
+				DB3859AB1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app */,
+				DB3859BA1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB38599B1D81A33B009B8A2A /* RelogioExemplo */ = {
+			isa = PBXGroup;
+			children = (
+				DB38599C1D81A33B009B8A2A /* AppDelegate.swift */,
+				DB38599E1D81A33B009B8A2A /* ViewController.swift */,
+				DB3859A01D81A33B009B8A2A /* Main.storyboard */,
+				DB3859A31D81A33B009B8A2A /* Assets.xcassets */,
+				DB3859A51D81A33B009B8A2A /* LaunchScreen.storyboard */,
+				DB3859A81D81A33B009B8A2A /* Info.plist */,
+			);
+			path = RelogioExemplo;
+			sourceTree = "<group>";
+		};
+		DB3859AF1D81A33B009B8A2A /* RelogioExemplo WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DB3859B01D81A33B009B8A2A /* Interface.storyboard */,
+				DB3859B31D81A33B009B8A2A /* Assets.xcassets */,
+				DB3859B51D81A33B009B8A2A /* Info.plist */,
+			);
+			path = "RelogioExemplo WatchKit App";
+			sourceTree = "<group>";
+		};
+		DB3859BE1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DB3859C11D81A33B009B8A2A /* InterfaceController.swift */,
+				DB3859C31D81A33B009B8A2A /* ExtensionDelegate.swift */,
+				DB3859C51D81A33B009B8A2A /* NotificationController.swift */,
+				DB3859C71D81A33B009B8A2A /* ComplicationController.swift */,
+				DB3859C91D81A33B009B8A2A /* Assets.xcassets */,
+				DB3859CB1D81A33B009B8A2A /* Info.plist */,
+				DB3859BF1D81A33B009B8A2A /* Supporting Files */,
+			);
+			path = "RelogioExemplo WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DB3859BF1D81A33B009B8A2A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DB3859C01D81A33B009B8A2A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB3859981D81A33B009B8A2A /* RelogioExemplo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3859D61D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo" */;
+			buildPhases = (
+				DB3859951D81A33B009B8A2A /* Sources */,
+				DB3859961D81A33B009B8A2A /* Frameworks */,
+				DB3859971D81A33B009B8A2A /* Resources */,
+				DB3859D51D81A33B009B8A2A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3859AE1D81A33B009B8A2A /* PBXTargetDependency */,
+			);
+			name = RelogioExemplo;
+			productName = RelogioExemplo;
+			productReference = DB3859991D81A33B009B8A2A /* RelogioExemplo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB3859AA1D81A33B009B8A2A /* RelogioExemplo WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3859D21D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo WatchKit App" */;
+			buildPhases = (
+				DB3859A91D81A33B009B8A2A /* Resources */,
+				DB3859D11D81A33B009B8A2A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB3859BD1D81A33B009B8A2A /* PBXTargetDependency */,
+			);
+			name = "RelogioExemplo WatchKit App";
+			productName = "RelogioExemplo WatchKit App";
+			productReference = DB3859AB1D81A33B009B8A2A /* RelogioExemplo WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DB3859B91D81A33B009B8A2A /* RelogioExemplo WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB3859CE1D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo WatchKit Extension" */;
+			buildPhases = (
+				DB3859B61D81A33B009B8A2A /* Sources */,
+				DB3859B71D81A33B009B8A2A /* Frameworks */,
+				DB3859B81D81A33B009B8A2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RelogioExemplo WatchKit Extension";
+			productName = "RelogioExemplo WatchKit Extension";
+			productReference = DB3859BA1D81A33B009B8A2A /* RelogioExemplo WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB3859911D81A33B009B8A2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = frsoares;
+				TargetAttributes = {
+					DB3859981D81A33B009B8A2A = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DB3859AA1D81A33B009B8A2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3AMBC8TS93;
+					};
+					DB3859B91D81A33B009B8A2A = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 3AMBC8TS93;
+					};
+				};
+			};
+			buildConfigurationList = DB3859941D81A33B009B8A2A /* Build configuration list for PBXProject "RelogioExemplo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB3859901D81A33B009B8A2A;
+			productRefGroup = DB38599A1D81A33B009B8A2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB3859981D81A33B009B8A2A /* RelogioExemplo */,
+				DB3859AA1D81A33B009B8A2A /* RelogioExemplo WatchKit App */,
+				DB3859B91D81A33B009B8A2A /* RelogioExemplo WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB3859971D81A33B009B8A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3859A71D81A33B009B8A2A /* LaunchScreen.storyboard in Resources */,
+				DB3859A41D81A33B009B8A2A /* Assets.xcassets in Resources */,
+				DB3859A21D81A33B009B8A2A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3859A91D81A33B009B8A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3859B41D81A33B009B8A2A /* Assets.xcassets in Resources */,
+				DB3859B21D81A33B009B8A2A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3859B81D81A33B009B8A2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3859CA1D81A33B009B8A2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB3859951D81A33B009B8A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB38599F1D81A33B009B8A2A /* ViewController.swift in Sources */,
+				DB38599D1D81A33B009B8A2A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3859B61D81A33B009B8A2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB3859C61D81A33B009B8A2A /* NotificationController.swift in Sources */,
+				DB3859C81D81A33B009B8A2A /* ComplicationController.swift in Sources */,
+				DB3859C41D81A33B009B8A2A /* ExtensionDelegate.swift in Sources */,
+				DB3859C21D81A33B009B8A2A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB3859AE1D81A33B009B8A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB3859AA1D81A33B009B8A2A /* RelogioExemplo WatchKit App */;
+			targetProxy = DB3859AD1D81A33B009B8A2A /* PBXContainerItemProxy */;
+		};
+		DB3859BD1D81A33B009B8A2A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB3859B91D81A33B009B8A2A /* RelogioExemplo WatchKit Extension */;
+			targetProxy = DB3859BC1D81A33B009B8A2A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB3859A01D81A33B009B8A2A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB3859A11D81A33B009B8A2A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB3859A51D81A33B009B8A2A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB3859A61D81A33B009B8A2A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DB3859B01D81A33B009B8A2A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB3859B11D81A33B009B8A2A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB3859CC1D81A33B009B8A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB3859CD1D81A33B009B8A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB3859CF1D81A33B009B8A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "RelogioExemplo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DB3859D01D81A33B009B8A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "RelogioExemplo WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DB3859D31D81A33B009B8A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RelogioExemplo_WatchKit_Extension;
+				INFOPLIST_FILE = "RelogioExemplo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DB3859D41D81A33B009B8A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RelogioExemplo_WatchKit_Extension;
+				INFOPLIST_FILE = "RelogioExemplo WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DB3859D71D81A33B009B8A2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = RelogioExemplo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DB3859D81D81A33B009B8A2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = RelogioExemplo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.RelogioExemplo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB3859941D81A33B009B8A2A /* Build configuration list for PBXProject "RelogioExemplo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3859CC1D81A33B009B8A2A /* Debug */,
+				DB3859CD1D81A33B009B8A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB3859CE1D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3859CF1D81A33B009B8A2A /* Debug */,
+				DB3859D01D81A33B009B8A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB3859D21D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3859D31D81A33B009B8A2A /* Debug */,
+				DB3859D41D81A33B009B8A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DB3859D61D81A33B009B8A2A /* Build configuration list for PBXNativeTarget "RelogioExemplo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB3859D71D81A33B009B8A2A /* Debug */,
+				DB3859D81D81A33B009B8A2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB3859911D81A33B009B8A2A /* Project object */;
+}
