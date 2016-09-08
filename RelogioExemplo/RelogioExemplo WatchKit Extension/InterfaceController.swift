@@ -12,6 +12,8 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet var lblTexto: WKInterfaceLabel!
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -44,6 +46,12 @@ class InterfaceController: WKInterfaceController {
         
         // Estilo do alerta está como ActionSheet. Poderia ser também Alert ou SideBySideButtonsAlert
         presentAlertControllerWithTitle("Hey", message: "Woo loo loo", preferredStyle: .ActionSheet, actions: [ação1, ação2, ação3])
+        
+    }
+    
+    @IBAction func mudarTexto() {
+        
+        self.lblTexto.setText("Novo texto")
         
     }
 }

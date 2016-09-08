@@ -15,7 +15,16 @@
                                 <action selector="showAlert" destination="AgC-eL-Hgc" id="Dv7-wt-NRM"/>
                             </connections>
                         </button>
+                        <label width="136" alignment="left" text="Texto original" id="fyU-wG-GKX"/>
+                        <button width="1" alignment="left" title="Mudar texto" id="CjX-Ah-oyX">
+                            <connections>
+                                <action selector="mudarTexto" destination="AgC-eL-Hgc" id="qBh-E9-QHi"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="lblTexto" destination="fyU-wG-GKX" id="O69-EF-nNA"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
