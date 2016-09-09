@@ -21,6 +21,10 @@ class InterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
+        // Adicinando um dos itens do menu via código
+        // outros dois devem estar no Storyboard
+        addMenuItemWithItemIcon(.Play, title: "Alertar", action: #selector(InterfaceController.showAlert))
+        
         // Configure interface objects here.
     }
 
@@ -64,6 +68,19 @@ class InterfaceController: WKInterfaceController {
         imageSelected = (imageSelected % 2) + 1
         
         self.imagem.setImageNamed("Swift_logo_\(imageSelected)")
+        
+    }
+    
+    
+    @IBAction func aceitar() {
+
+        print("aceitou")
+
+    }
+    
+    @IBAction func rejeitar() {
+
+        print("rejeitou")
         
     }
 }

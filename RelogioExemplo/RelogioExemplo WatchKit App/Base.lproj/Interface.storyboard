@@ -28,6 +28,20 @@
                             </connections>
                         </button>
                     </items>
+                    <menu key="menu" id="Tx0-8O-K3Y">
+                        <items>
+                            <menuItem title="Aceitar" icon="accept" id="lsa-RC-i31">
+                                <connections>
+                                    <action selector="aceitar" destination="AgC-eL-Hgc" id="Lce-7d-B6c"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Rejeitar" icon="decline" id="gzF-OB-ksQ">
+                                <connections>
+                                    <action selector="rejeitar" destination="AgC-eL-Hgc" id="pJi-vA-wWk"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <outlet property="imagem" destination="It6-DU-iDI" id="ACj-Su-N1s"/>
