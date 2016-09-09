@@ -14,6 +14,10 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var lblTexto: WKInterfaceLabel!
     
+    @IBOutlet var imagem: WKInterfaceImage!
+    
+    var imageSelected : Int = 1
+    
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -52,6 +56,14 @@ class InterfaceController: WKInterfaceController {
     @IBAction func mudarTexto() {
         
         self.lblTexto.setText("Novo texto")
+        
+    }
+    
+    @IBAction func mudarImagem() {
+        
+        imageSelected = (imageSelected % 2) + 1
+        
+        self.imagem.setImageNamed("Swift_logo_\(imageSelected)")
         
     }
 }

@@ -21,13 +21,21 @@
                                 <action selector="mudarTexto" destination="AgC-eL-Hgc" id="qBh-E9-QHi"/>
                             </connections>
                         </button>
+                        <imageView height="135" alignment="center" image="Swift_logo_1" contentMode="scaleAspectFit" id="It6-DU-iDI"/>
+                        <button width="1" alignment="left" title="Mudar imagem" id="fq0-Bv-qOf">
+                            <connections>
+                                <action selector="mudarImagem" destination="AgC-eL-Hgc" id="lEy-eP-Md4"/>
+                            </connections>
+                        </button>
                     </items>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
+                        <outlet property="imagem" destination="It6-DU-iDI" id="ACj-Su-N1s"/>
                         <outlet property="lblTexto" destination="fyU-wG-GKX" id="O69-EF-nNA"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="220" y="295"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
