@@ -15,6 +15,11 @@
                                 <segue destination="d5m-KB-mFF" kind="push" id="8If-uz-wc0"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Ditado" id="ynQ-GS-7vg">
+                            <connections>
+                                <segue destination="QWI-am-xKL" kind="push" id="boe-cd-7sh"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Alertar" id="MrO-Bx-I4H">
                             <connections>
                                 <action selector="showAlert" destination="AgC-eL-Hgc" id="Dv7-wt-NRM"/>
@@ -56,10 +61,29 @@
             </objects>
             <point key="canvasLocation" x="220" y="295"/>
         </scene>
-        <!--Picker Interface Controller-->
+        <!--Ditado Interface Controller-->
+        <scene sceneID="h0j-Nq-ixd">
+            <objects>
+                <controller id="QWI-am-xKL" customClass="DitadoInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="103.5" alignment="left" text="Label" id="BYb-wI-qHn"/>
+                        <button width="1" alignment="left" title="Fale" id="IpR-Gh-rM9">
+                            <connections>
+                                <action selector="cliqueFalar" destination="QWI-am-xKL" id="88k-nh-T8k"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="lblTexto" destination="BYb-wI-qHn" id="WLW-cM-aRW"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="521" y="111"/>
+        </scene>
+        <!--Picker-->
         <scene sceneID="HfB-LX-p3R">
             <objects>
-                <controller id="d5m-KB-mFF" customClass="PickerInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
+                <controller identifier="Picker" id="d5m-KB-mFF" customClass="PickerInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
                     <items>
                         <picker height="127" alignment="left" style="stack" id="0QF-v9-87W"/>
                     </items>
@@ -68,7 +92,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="485" y="208"/>
+            <point key="canvasLocation" x="521" y="388"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
