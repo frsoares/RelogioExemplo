@@ -35,6 +35,11 @@
                                 <segue destination="1Vt-qb-yXi" kind="push" id="54c-La-y8Q"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Comunica" id="BSN-9N-pty">
+                            <connections>
+                                <segue destination="HlD-DH-6HN" kind="push" id="m6s-tj-aab"/>
+                            </connections>
+                        </button>
                         <label width="136" alignment="left" text="Texto original" id="fyU-wG-GKX"/>
                         <button width="1" alignment="left" title="Mudar texto" id="CjX-Ah-oyX">
                             <connections>
@@ -157,6 +162,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="803"/>
+        </scene>
+        <!--Comunica Interface Controller-->
+        <scene sceneID="g5E-g3-WeD">
+            <objects>
+                <controller id="HlD-DH-6HN" customClass="ComunicaInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
+                    <items>
+                        <label width="136" height="155.5" alignment="left" text="Label" numberOfLines="0" id="tNf-DF-9OQ"/>
+                    </items>
+                    <connections>
+                        <outlet property="messageLabel" destination="tNf-DF-9OQ" id="mOh-ej-lzd"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="521" y="803"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

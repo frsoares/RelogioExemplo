@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import WatchConnectivity
 
+class ViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +22,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func mudançaNoTexto(sender: UITextField){
+        
+        print(#function, sender.text)
+        
+        WCSession.defaultSession().sendMessage(["texto":sender.text!], replyHandler: {
+            print($0, "enviado...")
+            }) { error in
+                print(error.localizedDescription)
+        }
+        
+        
+    }
 
 }
 
