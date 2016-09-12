@@ -25,6 +25,7 @@
 		DB72BF371D83633F003FE6FF /* DitadoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */; };
 		DB7B3D281D86E87700A8C0FF /* Linha.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B3D271D86E87700A8C0FF /* Linha.swift */; };
 		DB7B3D2A1D86E8E400A8C0FF /* TabelaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */; };
+		DB7B3D2C1D86F0B400A8C0FF /* HapticInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B3D2B1D86F0B400A8C0FF /* HapticInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DitadoInterfaceController.swift; sourceTree = "<group>"; };
 		DB7B3D271D86E87700A8C0FF /* Linha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linha.swift; sourceTree = "<group>"; };
 		DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabelaInterfaceController.swift; sourceTree = "<group>"; };
+		DB7B3D2B1D86F0B400A8C0FF /* HapticInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,8 +165,9 @@
 				DB3859C31D81A33B009B8A2A /* ExtensionDelegate.swift */,
 				DB3859C51D81A33B009B8A2A /* NotificationController.swift */,
 				DB3859C71D81A33B009B8A2A /* ComplicationController.swift */,
-				DB72BF331D835FC3003FE6FF /* PickerInterfaceController.swift */,
 				DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */,
+				DB7B3D2B1D86F0B400A8C0FF /* HapticInterfaceController.swift */,
+				DB72BF331D835FC3003FE6FF /* PickerInterfaceController.swift */,
 				DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */,
 				DB7B3D271D86E87700A8C0FF /* Linha.swift */,
 				DB3859C91D81A33B009B8A2A /* Assets.xcassets */,
@@ -333,6 +336,7 @@
 				DB3859C41D81A33B009B8A2A /* ExtensionDelegate.swift in Sources */,
 				DB7B3D281D86E87700A8C0FF /* Linha.swift in Sources */,
 				DB3859C21D81A33B009B8A2A /* InterfaceController.swift in Sources */,
+				DB7B3D2C1D86F0B400A8C0FF /* HapticInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

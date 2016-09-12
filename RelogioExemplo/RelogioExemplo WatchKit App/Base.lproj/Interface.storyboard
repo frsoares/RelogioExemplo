@@ -30,6 +30,11 @@
                                 <action selector="showAlert" destination="AgC-eL-Hgc" id="Dv7-wt-NRM"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="left" title="Haptic" id="HnI-1X-59o">
+                            <connections>
+                                <segue destination="1Vt-qb-yXi" kind="push" id="54c-La-y8Q"/>
+                            </connections>
+                        </button>
                         <label width="136" alignment="left" text="Texto original" id="fyU-wG-GKX"/>
                         <button width="1" alignment="left" title="Mudar texto" id="CjX-Ah-oyX">
                             <connections>
@@ -126,6 +131,33 @@
             </objects>
             <point key="canvasLocation" x="521" y="388"/>
         </scene>
+        <!--Haptic Interface Controller-->
+        <scene sceneID="bRx-xK-ZbH">
+            <objects>
+                <controller id="1Vt-qb-yXi" customClass="HapticInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="JB1-OE-HED">
+                            <items>
+                                <tableRow identifier="Linha" id="ort-dg-quj" customClass="Linha" customModule="RelogioExemplo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="n72-Pt-MGt">
+                                        <items>
+                                            <label width="125.5" height="36.5" alignment="left" text="Label" id="vCV-XU-e5H"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="vCV-XU-e5H" id="sBL-B8-zZJ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tabela" destination="JB1-OE-HED" id="VAf-yc-pWp"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="803"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
@@ -140,14 +172,14 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="220" y="1109"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="RelogioExemplo_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="480" y="1109"/>
         </scene>
     </scenes>
 </document>
