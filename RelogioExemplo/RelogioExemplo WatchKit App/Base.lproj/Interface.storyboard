@@ -10,6 +10,11 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RelogioExemplo_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <button width="1" alignment="left" title="Tabela" id="LQw-Uz-fH1">
+                            <connections>
+                                <segue destination="ncV-3Z-A6A" kind="push" id="ZeM-9D-Svd"/>
+                            </connections>
+                        </button>
                         <button width="1" alignment="left" title="Logos" id="skp-qw-0G1">
                             <connections>
                                 <segue destination="d5m-KB-mFF" kind="push" id="8If-uz-wc0"/>
@@ -60,6 +65,33 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="220" y="295"/>
+        </scene>
+        <!--Tabela Interface Controller-->
+        <scene sceneID="UL4-00-jML">
+            <objects>
+                <controller id="ncV-3Z-A6A" customClass="TabelaInterfaceController" customModule="RelogioExemplo_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="DWx-Rx-Hox">
+                            <items>
+                                <tableRow identifier="Linha" id="RQj-73-iZI" customClass="Linha" customModule="RelogioExemplo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="SOG-he-NFU">
+                                        <items>
+                                            <label width="76.5" height="33.5" alignment="left" text="Label" id="Vph-dG-N0T"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="textLabel" destination="Vph-dG-N0T" id="snt-fO-Rhi"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tabela" destination="DWx-Rx-Hox" id="dzc-hP-83P"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="-146"/>
         </scene>
         <!--Ditado Interface Controller-->
         <scene sceneID="h0j-Nq-ixd">

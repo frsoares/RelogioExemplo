@@ -23,6 +23,8 @@
 		DB3859CA1D81A33B009B8A2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB3859C91D81A33B009B8A2A /* Assets.xcassets */; };
 		DB72BF351D836031003FE6FF /* PickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72BF331D835FC3003FE6FF /* PickerInterfaceController.swift */; };
 		DB72BF371D83633F003FE6FF /* DitadoInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */; };
+		DB7B3D281D86E87700A8C0FF /* Linha.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B3D271D86E87700A8C0FF /* Linha.swift */; };
+		DB7B3D2A1D86E8E400A8C0FF /* TabelaInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		DB3859CB1D81A33B009B8A2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB72BF331D835FC3003FE6FF /* PickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PickerInterfaceController.swift; path = ../RelogioExemplo/PickerInterfaceController.swift; sourceTree = "<group>"; };
 		DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DitadoInterfaceController.swift; sourceTree = "<group>"; };
+		DB7B3D271D86E87700A8C0FF /* Linha.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Linha.swift; sourceTree = "<group>"; };
+		DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabelaInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,8 @@
 				DB3859C71D81A33B009B8A2A /* ComplicationController.swift */,
 				DB72BF331D835FC3003FE6FF /* PickerInterfaceController.swift */,
 				DB72BF361D83633F003FE6FF /* DitadoInterfaceController.swift */,
+				DB7B3D291D86E8E400A8C0FF /* TabelaInterfaceController.swift */,
+				DB7B3D271D86E87700A8C0FF /* Linha.swift */,
 				DB3859C91D81A33B009B8A2A /* Assets.xcassets */,
 				DB3859CB1D81A33B009B8A2A /* Info.plist */,
 				DB3859BF1D81A33B009B8A2A /* Supporting Files */,
@@ -319,11 +325,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB7B3D2A1D86E8E400A8C0FF /* TabelaInterfaceController.swift in Sources */,
 				DB3859C61D81A33B009B8A2A /* NotificationController.swift in Sources */,
 				DB72BF351D836031003FE6FF /* PickerInterfaceController.swift in Sources */,
 				DB72BF371D83633F003FE6FF /* DitadoInterfaceController.swift in Sources */,
 				DB3859C81D81A33B009B8A2A /* ComplicationController.swift in Sources */,
 				DB3859C41D81A33B009B8A2A /* ExtensionDelegate.swift in Sources */,
+				DB7B3D281D86E87700A8C0FF /* Linha.swift in Sources */,
 				DB3859C21D81A33B009B8A2A /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
