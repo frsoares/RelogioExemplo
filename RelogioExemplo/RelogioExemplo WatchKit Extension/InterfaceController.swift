@@ -18,12 +18,12 @@ class InterfaceController: WKInterfaceController {
     
     var imageSelected : Int = 1
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         // Adicinando um dos itens do menu via código
         // outros dois devem estar no Storyboard
-        addMenuItemWithItemIcon(.Play, title: "Alertar", action: #selector(InterfaceController.showAlert))
+        addMenuItem(with: .play, title: "Alertar", action: #selector(InterfaceController.showAlert))
         
         // Configure interface objects here.
     }
@@ -40,20 +40,20 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func showAlert() {
         
-        let ação1 = WKAlertAction(title: "Sim", style: .Default) {
+        let ação1 = WKAlertAction(title: "Sim", style: .default) {
             // código para ação de "Sim" aqui
         }
         
-        let ação2 = WKAlertAction(title: "Não", style: .Destructive){
+        let ação2 = WKAlertAction(title: "Não", style: .destructive){
             // código para ação de "Não" aqui
         }
         
-        let ação3 = WKAlertAction(title: "Cancelar", style: .Cancel){
+        let ação3 = WKAlertAction(title: "Cancelar", style: .cancel){
             print("oi")
         }
         
         // Estilo do alerta está como ActionSheet. Poderia ser também Alert ou SideBySideButtonsAlert
-        presentAlertControllerWithTitle("Hey", message: "Woo loo loo", preferredStyle: .ActionSheet, actions: [ação1, ação2, ação3])
+        presentAlert(withTitle: "Hey", message: "Woo loo loo", preferredStyle: .actionSheet, actions: [ação1, ação2, ação3])
         
     }
     
@@ -70,7 +70,6 @@ class InterfaceController: WKInterfaceController {
         self.imagem.setImageNamed("Swift_logo_\(imageSelected)")
         
     }
-    
     
     @IBAction func aceitar() {
 

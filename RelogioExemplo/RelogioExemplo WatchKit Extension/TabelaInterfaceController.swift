@@ -16,22 +16,21 @@ class TabelaInterfaceController: WKInterfaceController {
     
     let professores = ["Kiev Alfa", "Kiev Beta", "Kiev Gama", "Kiev Delta", "Kiev Épsilon", "Kiev Zeta", "Kiev Eta"]
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         
         self.tabela.setNumberOfRows(professores.count, withRowType: "Linha")
         
-        for (index, name) in professores.enumerate() {
+        for (index, name) in professores.enumerated() {
             
-            let linha = self.tabela.rowControllerAtIndex( index) as! Linha
+            let linha = self.tabela.rowController(at: index) as! Linha
             
             linha.textLabel.setText(name)
         }
     }
     
-    
-    override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
+    override func table(_ table: WKInterfaceTable, didSelectRowAt rowIndex: Int) {
         // faz qualquer coisa com a informação do índice da linha que foi selecionada
         print(professores[rowIndex])
     }

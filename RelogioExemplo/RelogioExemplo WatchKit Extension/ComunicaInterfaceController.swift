@@ -11,18 +11,19 @@ import Foundation
 
 import WatchConnectivity
 
-class ComunicaInterfaceController: WKInterfaceController, WCSessionDelegate {
+class ComunicaInterfaceController: WKInterfaceController {
+
 
     @IBOutlet var messageLabel : WKInterfaceLabel!
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
 
         if WCSession.isSupported() {
-            let session = WCSession.defaultSession()
+            let session = WCSession.default
             session.delegate = self
-            session.activateSession()
+            session.activate()
         }
     
     }
@@ -36,11 +37,18 @@ class ComunicaInterfaceController: WKInterfaceController, WCSessionDelegate {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+    
+}
 
-    func session(session: WCSession, didReceiveMessage message: [String : AnyObject]) {
-        // Faz alguma coisa com a mensagem recebida. Exemplo abaixo
-        self.messageLabel.setText(message["texto"] as? String)
+
+extension ComunicaInterfaceController : WCSessionDelegate {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        print("ActivationCompleted with state: \(activationState); error: \(error?.localizedDescription ?? "no error")")
     }
     
-    
+    func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+        print(#function, "entered")
+        self.messageLabel.setText(message["texto"] as? String ?? "")
+    }
 }

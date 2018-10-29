@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.18" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14238.10"/>
     </dependencies>
     <scenes>
         <!--Interface Controller-->
@@ -67,7 +71,7 @@
                             </menuItem>
                         </items>
                     </menu>
-                    <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.078431372550000003" green="0.62745098040000002" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="imagem" destination="It6-DU-iDI" id="ACj-Su-N1s"/>
                         <outlet property="lblTexto" destination="fyU-wG-GKX" id="O69-EF-nNA"/>
@@ -86,7 +90,7 @@
                                 <tableRow identifier="Linha" id="RQj-73-iZI" customClass="Linha" customModule="RelogioExemplo_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="SOG-he-NFU">
                                         <items>
-                                            <label width="76.5" height="33.5" alignment="left" text="Label" id="Vph-dG-N0T"/>
+                                            <label width="136" height="33.5" alignment="left" text="Label" id="Vph-dG-N0T"/>
                                         </items>
                                     </group>
                                     <connections>
@@ -101,7 +105,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="-146"/>
+            <point key="canvasLocation" x="220" y="-185"/>
         </scene>
         <!--Ditado Interface Controller-->
         <scene sceneID="h0j-Nq-ixd">

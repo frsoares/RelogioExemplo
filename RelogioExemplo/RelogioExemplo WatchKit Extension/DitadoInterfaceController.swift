@@ -14,8 +14,8 @@ class DitadoInterfaceController: WKInterfaceController {
 
     @IBOutlet var lblTexto: WKInterfaceLabel!
     
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
         
         // Configure interface objects here.
     }
@@ -31,15 +31,15 @@ class DitadoInterfaceController: WKInterfaceController {
     }
 
     @IBAction func cliqueFalar() {
-        // .Plain não inclui emojis, mas há opção de emojis estáticos e animados.
-        self.presentTextInputControllerWithSuggestions(["Oi","Olá", "Tchau", "Swift", "Sim", "Não"]
-        , allowedInputMode: .Plain) { (results) in
+        // .plain não inclui emojis, mas há opção de emojis estáticos e animados.
+        self.presentTextInputController(withSuggestions: ["Oi","Olá", "Tchau", "Swift", "Sim", "Não"]
+        , allowedInputMode: .plain) { (results) in
             
             self.lblTexto.setText(results?.first as? String)
             
             if let result = results?.first as? String {
                 if(result == "Swift"){
-                    self.pushControllerWithName("Picker", context: nil)
+                    self.pushController(withName: "Picker", context: nil)
                 }
             }
             

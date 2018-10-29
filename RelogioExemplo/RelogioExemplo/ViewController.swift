@@ -22,16 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func mudançaNoTexto(sender: UITextField){
+    @IBAction func mudançaNoTexto(_ sender: UITextField){
         
-        print(#function, sender.text)
+        print(#function, sender.text ?? "nil text")
         
-        WCSession.defaultSession().sendMessage(["texto":sender.text!], replyHandler: {
-            print($0, "enviado...")
-            }) { error in
-                print(error.localizedDescription)
-        }
-        
+        WCSession.default.sendMessage(["texto":sender.text!], replyHandler: nil, errorHandler: nil)
         
     }
 
